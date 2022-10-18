@@ -2,10 +2,20 @@ package com.serenitydojo;
 
 public class Dog {
    
-    
+    static public String DOG_NOISE = "WOOF";
     private String name;
     private String favoriteToy;
     private int age;
+    
+    public Boolean getIsFed() {
+        return isFed;
+    }
+    
+    public void feed(Boolean fed) {
+        isFed = fed;
+    }
+    
+    private Boolean isFed;
     
     public  Dog(String name, String favoriteToy, int age) {
     
@@ -25,5 +35,10 @@ public class Dog {
         public int getAge () {
             return age;
         }
+    
+    public String makeANoise() {
+        return DOG_NOISE;
+    }
+    
     
 }
